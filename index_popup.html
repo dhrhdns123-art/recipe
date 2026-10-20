@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CATCH-UP AX | 참여 신청</title>
+<style>
+:root{--ink:#172c46;--muted:#53677f;--blue:#2059d3;--line:#dbe3ee}*{box-sizing:border-box}body{margin:0;background:#f2f5fa;color:var(--ink);font-family:system-ui,'Apple SD Gothic Neo','Nanum Gothic',sans-serif;line-height:1.6}.top{max-width:1120px;margin:auto;padding:25px 28px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:19px;font-weight:850;letter-spacing:-.5px}.brand b{color:var(--blue)}.center{font-size:13px;color:var(--muted)}main{max-width:1060px;margin:30px auto 60px;padding:0 28px;display:grid;grid-template-columns:1fr 1.1fr;gap:55px;align-items:start}.intro{padding-top:36px}.eyebrow{display:inline-block;background:#e0eafa;color:#1c4aa5;border-radius:30px;padding:6px 13px;font-size:12px;font-weight:750}h1{font-size:44px;line-height:1.24;letter-spacing:-2px;margin:23px 0}h1 span{color:var(--blue)}.lead{font-size:16px;color:var(--muted);max-width:345px}.info{margin-top:38px;padding-top:24px;border-top:1px solid var(--line)}.info p{margin:10px 0;font-size:14px}.info strong{display:inline-block;width:82px}.steps{margin-top:32px;display:flex;gap:10px;flex-wrap:wrap}.steps span{font-size:12px;background:white;border:1px solid var(--line);padding:8px 12px;border-radius:8px}.card{background:white;padding:32px;border:1px solid var(--line);border-radius:22px;box-shadow:0 14px 45px #162c4610}h2{font-size:23px;margin:0 0 5px;letter-spacing:-.7px}.sub{font-size:13px;color:var(--muted);margin:0 0 24px}.field{margin:19px 0}.field label{display:block;font-size:14px;font-weight:750;margin-bottom:7px}.req{color:var(--blue)}input[type=text],input[type=email],input[type=url]{width:100%;min-height:49px;border:1px solid #c6d1e0;background:#fbfcfe;border-radius:9px;padding:12px 14px;font:inherit;font-size:14px;color:var(--ink)}input:focus{outline:3px solid #2059d326;border-color:var(--blue)}.hint{font-size:12px;color:var(--muted);margin:6px 0 0}.check{display:flex;gap:9px;align-items:start;font-size:13px;margin:24px 0 16px}.check input{margin-top:5px;width:16px;height:16px;accent-color:var(--blue);flex-shrink:0}button{width:100%;border:0;background:var(--blue);color:white;padding:15px;border-radius:10px;font:inherit;font-weight:750;cursor:pointer}button:hover{background:#1848af}button:disabled{opacity:.65;cursor:wait}.notice{font-size:12px;line-height:1.7;color:var(--muted);margin:15px 0 0}.status{display:none;padding:13px;margin-top:18px;background:#eef4ff;border-radius:9px;font-size:14px;white-space:pre-line}.status.error{background:#fff0ef;color:#9d2626}.status:focus{outline:2px solid var(--blue)}details{margin:20px 0 0;border-top:1px solid var(--line);padding-top:15px;font-size:12px;color:var(--muted)}summary{cursor:pointer;font-weight:700}.localnote{background:#fff7e6;color:#755118;padding:11px 13px;border-radius:9px;font-size:12px;margin-bottom:20px}footer{text-align:center;color:var(--muted);font-size:12px;padding:0 20px 28px}@media(max-width:760px){.top{padding:19px 20px}.center{font-size:11px}main{grid-template-columns:1fr;margin:0 auto 35px;padding:0 20px;gap:26px}.intro{padding-top:15px}h1{font-size:36px;margin:17px 0}.info{margin-top:22px}.steps{display:none}.card{padding:25px 21px}.lead{max-width:none}}
+dialog{border:0;border-radius:20px;padding:30px;max-width:440px;width:calc(100% - 40px);color:var(--ink);box-shadow:0 20px 70px #172c4633}dialog::backdrop{background:#101f3e88}dialog h2{margin-bottom:12px}dialog p{white-space:pre-line;font-size:14px;margin-bottom:24px}dialog button{margin-top:5px}
+</style></head>
+<body>
+<header class="top"><div class="brand">CATCH-UP <b>AX</b></div><div class="center">대학일자리플러스센터</div></header>
+<main>
+<section class="intro" aria-labelledby="title"><span class="eyebrow">우리대학 재학생 대상</span><h1 id="title">나의 직무역량,<br><span>진단에서 시작하세요.</span></h1><p class="lead">CATCH-UP AX 직무역량진단<br>참여를 희망하는 재학생은 아래 정보를 입력해 주세요.</p><div class="info"><p><strong>프로그램</strong>CATCH-UP AX 직무역량진단</p><p><strong>참여 대상</strong>우리대학 재학생</p><p><strong>신청 정보</strong>캐치ID · 성명 · 이메일</p></div><div class="steps" aria-label="신청 절차"><span>01 정보 입력</span><span>02 재학생 확인</span><span>03 신청 완료</span></div></section>
+<section class="card" aria-labelledby="formTitle"><h2 id="formTitle">참여 신청</h2><p class="sub">정확한 정보를 입력해 주세요. 모든 항목은 필수입니다.</p><div id="localNote" class="localnote" hidden>연결 주소가 설정되지 않았습니다. 현재는 미리보기이며 실제 접수되지 않습니다. 테스트하려면 아래 ‘연결 설정’에 배포 주소를 입력하세요.</div>
+<form id="application"><div class="field"><label for="catchId">캐치ID <span class="req">*</span></label><input id="catchId" name="catchId" type="text" required maxlength="80" autocomplete="username" placeholder="캐치ID를 입력해 주세요" aria-describedby="idHint"><p class="hint" id="idHint">캐치에서 사용하는 ID를 공백 없이 입력해 주세요.</p></div>
+<div class="field"><label for="name">성명 <span class="req">*</span></label><input id="name" name="name" type="text" required maxlength="50" autocomplete="name" placeholder="성명을 입력해 주세요"></div>
+<div class="field"><label for="email">이메일 <span class="req">*</span></label><input id="email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="example@email.com"><p class="hint">안내받을 수 있는 이메일 주소를 입력해 주세요.</p></div>
+<label class="check" for="student"><input id="student" type="checkbox" required><span>저는 현재 우리대학 재학생임을 확인합니다.</span></label>
+<button id="submit" type="submit">참여 신청하기</button><p class="notice">입력한 정보는 참여 신청 접수를 위해 담당 시트에 전달됩니다. 잘못 입력한 정보의 수정은 담당 부서에 문의해 주세요.</p><div id="status" class="status" role="status" aria-live="polite" tabindex="-1"></div></form>
+<details id="localSettings" hidden><summary>연결 설정 · 관리자용</summary><p>Apps Script 웹 앱 배포 주소(/exec)를 입력하세요. 접수 결과는 현재 화면의 팝업으로 확인합니다.</p><label for="endpoint">웹 앱 주소</label><input id="endpoint" type="url" placeholder="https://script.google.com/macros/s/…/exec"><p>주소를 비워 두면 입력 검증만 수행하며 시트에 저장하지 않습니다.</p></details>
+</section></main><footer>대학일자리플러스센터 · CATCH-UP AX 참여 신청</footer>
+<iframe name="application_receiver" id="application_receiver" title="신청 접수 처리" hidden></iframe>
+<dialog id="resultDialog" aria-labelledby="resultTitle"><h2 id="resultTitle">접수 결과</h2><p id="resultText"></p><button id="closeDialog" type="button">확인</button></dialog>
+<script>
+'use strict';
+// 로컬 파일에 주소를 미리 지정하려면 아래 빈 문자열에 웹 앱 /exec 주소를 입력하세요.
+const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbynbuF-g7z7WNF4WHTpS4_r3uGi5euRlJbXBnYVeyXIE8HWBBwUsr1zAMU7H5jIpp1--g/exec';
+const form = document.getElementById('application');
+const statusBox = document.getElementById('status');
+const endpoint = document.getElementById('endpoint');
+endpoint.value = WEB_APP_URL;
+document.getElementById('localNote').hidden = !!WEB_APP_URL;
+document.getElementById('localSettings').hidden = !!WEB_APP_URL;
+const submitButton = document.getElementById('submit');
+const resultDialog = document.getElementById('resultDialog');
+let pending = null;
+let responseTimer = null;
+document.getElementById('closeDialog').addEventListener('click', () => resultDialog.close());
+function popup(title,text){document.getElementById('resultTitle').textContent=title;document.getElementById('resultText').textContent=text;resultDialog.showModal();}
+function busy(value){submitButton.disabled=value;submitButton.textContent=value?'접수 중…':'참여 신청하기';}
+window.addEventListener('message',function(event){
+ const response=event.data;
+ if(!pending || !response || response.type!=='catch-application-result' || response.requestId!==pending) return;
+ // Apps Script 응답 페이지의 Google 출처와 일회성 요청값을 함께 확인합니다.
+ if(!/^https:\/\/(?:[a-z0-9-]+\.)*googleusercontent\.com$/.test(event.origin) && event.origin!=='https://script.google.com') return;
+ clearTimeout(responseTimer);pending=null;busy(false);
+ if(response.ok===true){form.reset();popup('신청이 완료되었습니다',String(response.message));message('정상 접수되었습니다.',false);}
+ else{popup('신청 결과 확인',String(response.message || '접수하지 못했습니다.'));}
+});
+function message(text,error){statusBox.textContent=text;statusBox.className='status'+(error?' error':'');statusBox.style.display='block';statusBox.focus();}
+form.addEventListener('submit',function(event){
+ event.preventDefault();
+ const data={catchId:document.getElementById('catchId').value.trim(),name:document.getElementById('name').value.trim(),email:document.getElementById('email').value.trim(),student:document.getElementById('student').checked};
+ if(!data.catchId || /\s/.test(data.catchId)){message('캐치ID를 공백 없이 입력해 주세요.',true);return;}
+ if(!data.name){message('성명을 입력해 주세요.',true);return;}
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)){message('이메일 주소를 확인해 주세요.',true);return;}
+ if(!data.student){message('재학생 여부를 확인해 주세요.',true);return;}
+  const url=endpoint.value.trim();
+  if(!url){message('입력 확인이 완료되었습니다.\n현재는 미리보기이므로 신청 정보는 저장되지 않았습니다. 실제 접수는 Apps Script 배포 주소를 연결한 뒤 이용해 주세요.',false);return;}
+  if(!/^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]+\/exec$/.test(url)){message('올바른 Apps Script 웹 앱 배포 주소(/exec)를 입력해 주세요.',true);return;}
+  if(pending) return;
+  const random=new Uint8Array(24);crypto.getRandomValues(random);
+  pending=Array.from(random,n=>n.toString(16).padStart(2,'0')).join('');
+  data.requestId=pending;
+  data.responseOrigin=location.origin==='null'?'*':location.origin;
+  busy(true);message('신청 정보를 저장하고 있습니다. 잠시만 기다려 주세요.',false);
+  const post=document.createElement('form');post.method='POST';post.action=url;post.target='application_receiver';post.style.display='none';
+  const payload=document.createElement('input');payload.type='hidden';payload.name='payload';payload.value=JSON.stringify(data);post.appendChild(payload);document.body.appendChild(post);
+  responseTimer=setTimeout(function(){pending=null;busy(false);popup('접수 결과 확인이 필요합니다','응답을 확인하지 못했습니다. 접수되었을 수도 있으므로 다시 신청하기 전에 담당자에게 확인해 주세요.');},60000);
+  post.submit();post.remove();
+});
+</script></body></html>
